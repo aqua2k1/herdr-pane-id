@@ -1,0 +1,16 @@
+id = "aqua2k1.herdr-pane-id"
+name = "Herdr Pane ID"
+version = "0.1.0"
+min_herdr_version = "0.9.0"
+platforms = ["linux", "macos"]
+
+[[startup]]
+command = ["bash", "sync-all.sh"]
+
+[[events]]
+on = "pane.created"
+command = ["bash", "sync-event.sh"]
+
+[[events]]
+on = "pane.moved"
+command = ["bash", "sync-event.sh"]
