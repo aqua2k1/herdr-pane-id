@@ -14,7 +14,7 @@ The Bash plugin syncs existing panes on startup and new or moved panes afterward
 Install the plugin:
 
 ```bash
-herdr plugin install https://github.com/aqua2k1/herdr-pane-id.git
+herdr plugin install aqua2k1/herdr-pane-id
 ```
 
 Sync existing panes:
