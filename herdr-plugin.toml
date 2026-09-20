@@ -4,6 +4,12 @@ version = "0.1.0"
 min_herdr_version = "0.9.0"
 platforms = ["linux", "macos"]
 
+[[actions]]
+id = "sync-all"
+title = "Sync pane IDs"
+contexts = ["workspace"]
+command = ["bash", "sync-all.sh"]
+
 [[startup]]
 command = ["bash", "sync-all.sh"]
 

@@ -11,19 +11,25 @@ The Bash plugin syncs existing panes on startup and new or moved panes afterward
 
 ## Install locally
 
+Install the plugin:
+
 ```bash
-herdr plugin link /home/mingzi47/Projects/herdr-pane-id
+herdr plugin install https://github.com/aqua2k1/herdr-pane-id.git
+```
+
+Sync existing panes:
+
+```bash
+herdr plugin action invoke sync-all --plugin aqua2k1.herdr-pane-id
+```
+
+Check plugin status:
+
+```bash
 herdr plugin list
 ```
 
-Run the initial sync immediately:
-
-```bash
-bash /home/mingzi47/Projects/herdr-pane-id/sync-all.sh
-```
-
 The startup hook repeats this after session restore.
-
 ## Inspect logs
 
 ```bash
